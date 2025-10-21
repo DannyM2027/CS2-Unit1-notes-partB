@@ -77,7 +77,38 @@ public class Main {
       System.out.println(lastWord);
 
 
+      // .indexof()  
+      // the first index of the string you're look for
+      String message1 = "This is cool";
+      String message2 = "This is not cool";
 
+      int indexOfNot1 = message1.indexOf("not");
+      int indexOfNot2 = message2.indexOf("not");
+
+      System.out.println("Index of not is message: " + indexOfNot1);
+      System.out.println("Index of not is message: " + indexOfNot2);
+
+      // .equals() allow u to compare the contents of 2 string objects
+      // it checks every character in both, then returns a boolean answer
+      boolean areTheyEqual = message1.equals(message2);
+      System.out.println("does m1 equal m2? " + areTheyEqual); // order notg matter
+      areTheyEqual = message2.equals(areTheyEqual);
+      System.out.println(areTheyEqual);
+
+      // u can compare strngs variabkles to a string literal
+      areTheyEqual= message1.equals("This is cool");
+      System.out.println(areTheyEqual);
+
+      // compare TO compares to strings
+      // returns an int rep  alphapbetical order
+      System.out.println( message1.compareTo("Z"));
+      System.out.println( message1.compareTo("t"));
+      System.out.println( message1.compareTo("A"));
+
+      // neg numbers mean the other string come after
+      // the original string msg1
+      // pos num come bf
+      // T is 19 posit away from A
 
    }
 }
